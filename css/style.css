@@ -1,3 +1,10 @@
+:root {
+    --Antracita: #293133;
+    --Marengo: #ffbf8d;
+    --Acero: #434b4d;
+    --Ceniza: #CDCDCD;
+}
+
 body {
-    color: blueviolet;
+    font-family: 'Quicksand', sans-serif;
 }
