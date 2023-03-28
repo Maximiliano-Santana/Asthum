@@ -16,7 +16,7 @@ body {
 
 /* Seeccion de log in */
 
-.login {
+main {
     width: 100%;
     height: 100vh;
     display: grid;
@@ -24,7 +24,7 @@ body {
     border: solid var(--Ceniza);
 }
 
-.login .container {
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,25 +32,26 @@ body {
     width: 400px;
 }
 
-.login .container .form {
+.container .form {
     margin: 12px;
 }
 
-.login .container p:nth-child(2) {
+.container p:nth-child(2) {
+    text-align: center;
     font: bold;
     color: var(--Antracita);
     margin: 0px;
     font-size: var(--lg);
 }
 
-.login .container p:nth-child(3) {
+.container p:nth-child(3) {
     text-align: center;
     color: var(--Acero);
     margin: 0px;
     font-size: var(--sm);
 }
 
-.login .container p:nth-child(6) {
+.container p:nth-child(6) {
     text-align: center;
     color: var(--Acero);
     margin: 0px;
@@ -58,7 +59,7 @@ body {
     font-size: var(--sm);
 }
 
-.login .container p:nth-child(7) {
+.container p:nth-child(7) {
     text-align: center;
     color: var(--Acero);
     margin: 0px;
@@ -116,8 +117,17 @@ p a {
     background-color: var(--Ceniza);
 }
 
-@media (min-width: 700px) {
+#logo {
+    display: none;
+}
+
+@media (max-width: 700px) {
     #logo {
-        display: none;
+        display: flex;
+    }
+    .new-password-button,
+    .sign-up-button,
+    .primary-button {
+        margin-top: 70%;
     }
 }
