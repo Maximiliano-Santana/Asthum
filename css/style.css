@@ -3,15 +3,18 @@
     --Marengo: #ffbf8d;
     --Acero: #434b4d;
     --Ceniza: #CDCDCD;
-    --sm: 12px;
+    --sm: 14px;
     --md: 18px;
-    --lg: 24px;
+    --lg: 28px;
 }
 
 body {
     font-family: 'Quicksand', sans-serif;
     margin: 0px;
 }
+
+
+/* Seeccion de log in */
 
 .login {
     width: 100%;
@@ -41,12 +44,36 @@ body {
 }
 
 .login .container p:nth-child(3) {
+    text-align: center;
     color: var(--Acero);
     margin: 0px;
     font-size: var(--sm);
 }
 
-.input-password {
+.login .container p:nth-child(6) {
+    text-align: center;
+    color: var(--Acero);
+    margin: 0px;
+    margin-bottom: 16px;
+    font-size: var(--sm);
+}
+
+.login .container p:nth-child(7) {
+    text-align: center;
+    color: var(--Acero);
+    margin: 0px;
+    font-size: var(--sm);
+}
+
+p a {
+    text-decoration: none;
+    text-align: center;
+    color: var(--Acero);
+    margin: 0px;
+    font-size: var(--sm);
+}
+
+.input {
     width: 100%;
     height: 40px;
     border-radius: 8px;
@@ -55,16 +82,22 @@ body {
     margin-bottom: 12px;
 }
 
-.login-button {
+.primary-button {
     margin-top: 12px;
     width: 100%;
     height: 48px;
     box-sizing: border-box;
     background-color: var(--Antracita);
     font-family: 'Quicksand';
-    color: white;
+    color: var(--Ceniza);
     border: none;
     border-radius: 10px;
+    margin-bottom: 32px;
+    font-size: var(--sm);
+}
+
+.primary-button:hover {
+    background-color: var(--Acero);
 }
 
 .label {
@@ -74,6 +107,13 @@ body {
 
 #logo {
     width: 80%;
+}
+
+#email-image {
+    width: 40%;
+    margin: 32px;
+    border-radius: 50%;
+    background-color: var(--Ceniza);
 }
 
 @media (min-width: 700px) {
