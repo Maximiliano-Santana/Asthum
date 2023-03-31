@@ -16,26 +16,27 @@ body {
 
 /* Section log in, signup, pasword reset */
 
-.login {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-}
-
-.login .container {
+.container {
+    margin: 0px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100vh;
     justify-content: center;
     align-items: center;
+}
+
+.container .form {
+    margin: 0px;
     width: 400px;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.login .container .form {
-    margin: 12px;
-}
-
-.login .title {
+.title {
     text-align: center;
     font: bold;
     color: var(--Antracita);
@@ -43,14 +44,14 @@ body {
     font-size: var(--lg);
 }
 
-.login .subtitle {
+.subtitle {
     text-align: center;
     color: var(--Acero);
     margin: 0px;
     font-size: var(--sm);
 }
 
-.login .help {
+.help {
     text-align: center;
     color: var(--Acero);
     margin: 0px;
@@ -58,12 +59,12 @@ body {
     font-size: var(--sm);
 }
 
-.login .value {
+.value {
     color: var(--Ceniza);
     font-weight: 700;
 }
 
-.login p a {
+p a {
     text-decoration: none;
     text-align: center;
     color: var(--Acero);
@@ -71,8 +72,8 @@ body {
     font-size: var(--sm);
 }
 
-.login .input {
-    width: 100%;
+.input {
+    width: 95%;
     height: 40px;
     border-radius: 8px;
     background-color: var(--Ceniza);
@@ -80,9 +81,9 @@ body {
     margin-bottom: 12px;
 }
 
-.login .primary-button {
+.primary-button {
     margin-top: 12px;
-    width: 100%;
+    width: 400px;
     height: 48px;
     box-sizing: border-box;
     background-color: var(--Antracita);
@@ -95,44 +96,51 @@ body {
     font-weight: 700;
 }
 
-.login .edit-button {
+.edit-button {
     background-color: var(--Ceniza);
     color: var(--Antracita);
     border: solid var(--Antracita) 1px;
 }
 
-.login .edit-button:hover {
+.edit-button:hover {
     background-color: var(--Acero);
     color: var(--Ceniza);
 }
 
-.login .primary-button:hover {
+.primary-button:hover {
     background-color: var(--Acero);
 }
 
-.login .label {
+.label {
     font-size: var(--sm);
     color: var(--Antracita);
+    width: 95%;
 }
 
-.login #logo {
-    width: 80%;
+#logo {
+    width: 400px;
 }
 
-.login #email-image {
-    width: 40%;
+#email-image {
+    width: 200px;
     margin: 32px;
     border-radius: 50%;
     background-color: var(--Ceniza);
 }
 
-.login #logo {
+#logo {
     display: none;
 }
 
-@media (max-width: 900px) {
-    .login #logo {
+@media (max-width: 800px) {
+    #logo {
         display: flex;
+    }
+    .form {
+        width: 100%;
+    }
+    .primary-button {
+        width: 95%;
     }
 }
 
