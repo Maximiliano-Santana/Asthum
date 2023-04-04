@@ -8,6 +8,10 @@
     --lg: 28px;
 }
 
+.inactive {
+    display: none;
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
     margin: 0px;
@@ -199,7 +203,8 @@ nav div {
     padding-right: 16px;
 }
 
-.account-menu a {
+.account-menu {
+    cursor: pointer;
     text-decoration: none;
     color: var(--Marengo);
     font-size: var(--sm);
@@ -207,7 +212,7 @@ nav div {
     align-items: center;
 }
 
-.account-menu a img {
+.account-menu img {
     padding: 4px;
     height: 12px;
     width: 12px;
@@ -355,13 +360,21 @@ nav div {
 
 /* section menu desktop */
 
+.desktop-menu {
+    padding: 0px;
+    position: absolute;
+    right: 80px;
+    top: 70px;
+}
+
 .desktop-menu ul {
     width: 150px;
     border: solid var(--Ceniza) 1px;
+    background-color: white;
     list-style: none;
     padding: 8px;
     margin: 0px;
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
     font-weight: 700;
 }
 
