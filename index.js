@@ -5,7 +5,6 @@ const movileMenu = document.querySelector('.movile-menu')
 const shoppingCartActivate = document.querySelector('.shopping-cart-icon')
 const shoppingCart = document.querySelector('.my-shopping-cart')
 
-console.log(desktopMenu.classList)
 
 desktopMenuActivate.addEventListener('click', () => {
     desktopMenu.classList.toggle('inactive')
@@ -21,5 +20,4 @@ shoppingCartActivate.addEventListener('click', () => {
     shoppingCart.classList.toggle('inactive')
     movileMenu.classList.add('inactive')
     desktopMenu.classList.add('inactive')
-    console.log('abbre carrito')
 })
