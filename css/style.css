@@ -251,6 +251,44 @@ nav div {
 }
 
 
+/* section  shopping */
+
+.my-shopping-cart {
+    width: 400px;
+    align-items: center;
+    border-radius: 10px;
+    padding: 8px;
+    border: solid var(--Ceniza) 2px;
+}
+
+.product-in-cart {
+    height: 92px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px 0px 4px 0px;
+    border: solid var(--Ceniza) 1px;
+}
+
+.product-in-cart-left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.product-in-cart-left img {
+    height: 80px;
+    width: 80px;
+    padding: 8px;
+    object-fit: cover;
+}
+
+.product-in-cart .price {
+    padding: 8px;
+}
+
+
 /* section product card */
 
 .product-card {
