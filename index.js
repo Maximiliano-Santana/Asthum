@@ -66,7 +66,7 @@ function renderProducts() {
                     +
                     <img src="img/shopping-cart.png" alt="" id="shopping-car-image">
                 </div>
-            </div>
+        </div>
         </div>
         `
     })
