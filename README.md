@@ -1,2 +1,4 @@
 # Asthum
-Pagina web para un e-comerce
+Pagina web for an e-comerce
+
+Practice CSS and HTML for my personal brand
